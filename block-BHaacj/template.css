@@ -1,0 +1,77 @@
+/*          .flex-start
+                .col-1-45
+                    div:box
+                        .small-box
+                            icon
+                        .small-box
+                            icon
+                        .big-box
+                            padding
+                                h3
+                                p
+                                 btn{outline} | btn-color{background,color}
+...........................................
+                .col-1-45
+                    img
+
+            flex-start
+                .col-1-45
+                    img
+                .col-1-45
+                     div:box
+                        .small-box
+                            icon
+                        .small-box
+                            icon
+                        .big-box
+                            padding
+                                h3
+                                p
+                                 btn{outline} | btn-color{background,color}
+............................................
+section
+    article 
+        div:flex-start
+            div:| background-color :hover->change(background-color)
+              img 
+           div:| background-color
+              img
+            div:| background-color
+              img
+            div:| background-color
+              img
+            div:| background-color
+              img
+            div:| background-color
+              img
+            div:| background-color
+              img
+.............................................
+section
+    article
+        container | flex-col
+            flex-row | margin-top
+                div:color
+                    img
+                    flex-col
+                        h3
+                        em-RED-em
+                        p
+                    img
+                    center
+                        em-$400-em
+                        p
+            btn{outline} | btn-color{background,color}
+                        
+ ............................................       
+section
+    article
+        div=>height:100vh
+            flex-col | flex-end
+                form
+.............................................
+footer
+    .center
+        the end :)
+............................................. 
+*/

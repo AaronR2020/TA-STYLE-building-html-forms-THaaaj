@@ -1,0 +1,472 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*
+logo-text:32px
+hero-text:44px
+hero-text:18px
+
+*/
+/*................custom-style................*/
+/*common*/
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+.flex-center-col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.flex-center{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.flex-start{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.flex-start-center{
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.flex-end{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+a{
+    text-decoration: none;
+    
+}
+li{
+    display: inline-block;
+}
+.col-1-30{
+    width: 30%;
+}
+.col-1-x{
+    width: 40%;
+}
+.col-1-50{
+    width: 50%;
+}
+.col-1-6{
+    width: 60%;
+    margin: 0 auto;
+}
+.col-1-15{
+    width: 15%;
+}
+.col-1-100{
+    width:100%;
+}
+.col-1-45{
+    width: 45%;
+}
+input{
+     width: 90%;
+     padding: 5px;
+     border: 0;
+}
+label{
+    margin-left: 10px;
+}
+.row{
+    margin-top: 20px;
+}
+/*not common*/
+
+/*header*/
+header{
+    background-color: white;
+    padding: 20px 0;
+}
+body{
+    font-family: 'Oxygen', sans-serif;
+    background-color: rgb(153, 153, 153);
+}
+.container-nav{
+    width: 70%;
+    margin: 0 auto;
+    background-color: white;
+}
+nav h2{
+    font-size: 32px;
+}
+nav li a{
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 30px;
+}
+nav li a:hover{
+    color: teal;
+}
+
+/*section hero*/
+.hero-container{
+    width: 85%;
+    margin: 0 auto;
+}
+.hero{
+    width: 100%;
+    height: 90vh;
+    background:  linear-gradient(rgba(0, 0, 0, 0.582),rgba(0, 0, 0, 0.616)), url("assets/banner.jpg") no-repeat no-repeat;
+    background-size: cover;
+}
+.hero h2{
+    margin-top: 10vh;
+    font-size: 44px;
+    color: white;
+    
+}
+.hero img{
+    margin: 10px auto;
+}
+.hero p{
+    font-size: 18px;
+    color: rgb(219, 211, 211);
+}
+.hero-round-circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: white;
+    background-color: rgb(43, 168, 168);
+    margin: 30px; 
+    font-size: 24px;
+}
+.hero-form{
+    margin-top: 10vh;
+    width: 60%;
+    height: 30vh;
+    padding: 20px;
+    background-color: white;
+    border-radius: 6px;
+}
+.hero input{
+    margin-left: 1px;
+}
+.flex-start input{
+    width: 100%;
+}
+label h3{
+    line-height: 2.1;
+    display: inline-block;
+    font-weight: bold;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    padding: 10px 20px;
+}
+.btn-primary{
+    display: inline-block;
+    height: fit-content;
+    width: fit-content;
+    text-transform: capitalize;
+    color: white;
+    margin-top: 10px;
+    background-color:rgb(43, 168, 168);
+}
+.hero-btn{
+    height: 40px;
+    margin-top: 30px;
+    background-color:rgb(43, 168, 168);
+    color: white;
+    font-size: 18px;
+    width: 100%;
+    border-bottom: 5px solid rgb(51, 97, 97);
+}
+.btn-first{
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px;
+    color: teal;
+    background-color: white
+}
+.below-hero{
+    padding: 30px;
+    background-color: rgb(211, 211, 211);
+}
+.center{
+    text-align: center;
+}
+.below-hero h3{
+ font-size: 30px;
+ color: black;
+}
+.below-hero h3 em{
+    font-weight: 700;
+    line-height: 2.5;
+}
+.below-hero p{
+    color: rgb(88, 88, 88);
+}
+
+.places-info{
+    background-color: white;
+    position: relative;
+}
+.places-info .small-box{
+   width: 40px;
+   height: 40px;
+   border-radius: 2px;
+   background-color: rgba(94, 94, 94, 0.774);
+}
+.col-1-50 img{
+    object-fit: cover;
+    width: 100%;
+    border-radius: 6px;
+}
+.box-box-1{
+    width: 500px;
+    height: 30vh;
+    border-radius: 6px;
+}
+
+.big-box-color-1{
+    background-color: rgb(43, 168, 168);
+}
+.big-box-padding{
+    padding: 20px;
+}
+.big-box-padding h3{
+    line-height: 2.0;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+}
+.big-box-padding p{
+    line-height: 1.2;
+    color: rgb(238, 236, 236);
+}
+.absolute-box{
+    position: absolute;
+    right: 210px;
+}
+.absolute-box-alt{
+    position: absolute;
+    left: 210px;
+}
+.big-box-color-2{
+    border-radius: 6px;
+   background-color:  rgb(198,105,149);
+}
+.btn-second{
+margin-top: 20px;
+margin-bottom: 20px;
+color: rgba(198, 105, 148, 0.883);
+width: fit-content;
+background-color: white;
+}
+
+.country{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: teal;
+    width: 17%
+}
+.country:hover{
+    background-color:  rgb(198,105,149);
+    width: 17%
+}
+.cost{
+    background-color: white;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.cost-center{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+}
+.cost-padding{
+    padding: 5px 100px;
+}
+.green-bg{
+    background-color: teal;
+}
+.white{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.collection-cost{
+    border: 1px solid black;
+margin-top: 20px;
+}
+.white img{
+    height: 100%;
+    border-radius: 2px;
+    margin-right: 20px;
+}
+.cost-text{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.cost-text h4{
+    color: white;
+    line-height: 1.5;
+    font-size: 18px;
+    font-weight: 700;
+    margin-right:40px ;
+
+}
+.cost-text h3{
+    color: black;
+    line-height: 1.5;
+    font-size: 18px;
+    font-weight: 700;
+
+}
+.cost-text h6{
+    line-height: 1.8;
+    color: red;
+}
+.cost-text p{
+    width: fit-content;
+    margin-top: 10px;
+    line-height: 1.1;
+    color: rgb(100, 100, 100);
+}
+
+.cost-text a{
+    font-size: 15px;
+    color: white;
+}
+.cost-last{
+    justify-content: center;
+    align-items: center;
+}
+
+.center-btn{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+.show-more{
+    margin-top: 30px;
+}
+.map{
+    background: linear-gradient(rgba(31, 31, 31, 0.527),rgba(31, 31, 31, 0.527)),url("assets/map.png") no-repeat no-repeat;
+    background-size: cover;
+    width:100%;
+    height: 100vh;
+}
+.map-flex-center{
+    height: inherit;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.map-form{
+    margin-right: 10%;
+    padding: 2%;
+    background-color: rgba(255, 255, 255, 0.815);
+}
+.form-input{
+    display: inline-block;
+    margin: 5px;
+    width:inherit;
+    background-color: rgb(218, 216, 216);
+}
+.row-1-form{
+    padding: 10px;
+}
+.col-1-100{
+    display: inline-block;
+    margin: 5px;
+    width:95%;
+    background-color: rgb(218, 216, 216);
+
+}
+.col-1-100-green{
+    border-radius: 3px;
+    display: inline-block;
+    margin: 5px;
+    width:95%;
+    color: white;
+    background-color: rgb(12, 167, 167);
+}
+footer{
+    height: 40px;
+    background-color: rgb(105,198,186);
+}
+footer article{
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    color: white;
+}
